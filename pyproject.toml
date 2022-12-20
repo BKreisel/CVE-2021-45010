@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cve-2021-45010"
+version = "1.0.0"
+authors = [
+  { name="Brandon Kreisel", email="BKreisel@users.noreply.github.com" },
+]
+description = "A POC for CVE-2021-45010"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "requests",
+    "rich",
+]
+
+[project.scripts]
+cve-2021-45010 = "cve_2021_45010.main:cli"
+
+[project.urls]
+"Homepage" = "https://github.com/BKreisel/CVE-2021-45010"
+"Bug Tracker" = "https://github.com/BKreisel/CVE-2021-45010/issues"
